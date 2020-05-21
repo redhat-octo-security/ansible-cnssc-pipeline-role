@@ -1,9 +1,11 @@
 - name: Clone secure-supply-chain
   git:
     repo: https://github.com/redhat-octo-security/secure-supply-chain
+    version: {{ secure-supply-chain-branch }}
     dest: /home/vagrant/secure-supply-chain
 
 - name: Clone in-toto
   git:
     repo: https://github.com/in-toto/in-toto
+    version: {{ in-toto-branch }}
     dest: /home/vagrant/in-toto
