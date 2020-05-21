@@ -1,3 +1,5 @@
+# WORK IN PROGRESS. STILL UNDER ACTIVE DEVELOPMENT
+
 Ansible CNSSC Role
 ===================
 
