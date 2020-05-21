@@ -1,0 +1,4 @@
+---
+# tasks file for ansible-cnssc-pipeline-role
+- include: packages.yml
+- include: kind.yml

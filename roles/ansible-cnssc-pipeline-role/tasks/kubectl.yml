@@ -1,0 +1,6 @@
+- name: Download and install kubectl
+  get_url:
+    url: "https://storage.googleapis.com/kubernetes-release/release/{{ kubectl_version }}/bin/linux/amd64/kubectl"
+    dest: /usr/local/bin/kind
+    mode: '0755'
+    checksum: "sha256:{{ kubectl_hash }}"

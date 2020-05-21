@@ -1,0 +1,5 @@
+---
+- hosts: all
+  sudo: yes
+  roles:
+    - { role: "ansible-cnssc-pipeline-role", ansible-cnssc-pipeline-role-env_version: "0.0.1" }

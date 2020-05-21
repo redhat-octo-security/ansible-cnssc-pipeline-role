@@ -1,0 +1,20 @@
+---
+# GOLANG vars
+go_version: 1.14
+GOPATH: /home/vagrant/go
+GOROOT: /usr/local/go
+GO111MODULE: "on"
+
+go_get:
+- name: golint
+  url: github.com/google/ko
+
+# Download data
+kind_version: v0.8.1
+kind_hash: 781c3db479b805d161b7c2c7a31896d1a504b583ebfcce8fcd49538c684d96bc
+
+kubectl_version: v1.18.3
+kubectl_hash: 6fcf70aae5bc64870c358fac153cdfdc93f55d8bae010741ecce06bb14c083ea
+
+tkn_version: 0.9.0
+tln_hash: b070f458398deb9f81eff93858b61aa0303e9c38972fadc2b3a03ccb7175a267

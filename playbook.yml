@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: true
+  pre_tasks:
+    - name: Put SELinux in permissive mode, logging actions that would be blocked.
+      selinux:
+        policy: targeted
+        state: permissive
+  roles:
+    - ansible-cnssc-pipeline-role
+    - fubarhouse.golang
