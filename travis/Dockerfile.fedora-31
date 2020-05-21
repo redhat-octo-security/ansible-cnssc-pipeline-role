@@ -1,5 +1,0 @@
-FROM fedora:31
-
-RUN dnf -y update
-
-# todo

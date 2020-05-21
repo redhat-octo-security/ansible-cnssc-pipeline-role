@@ -1,0 +1,9 @@
+- name: Clone secure-supply-chain
+  git:
+    repo: https://github.com/redhat-octo-security/secure-supply-chain
+    dest: /home/vagrant/secure-supply-chain
+
+- name: Clone in-toto
+  git:
+    repo: https://github.com/in-toto/in-toto
+    dest: /home/vagrant/in-toto
