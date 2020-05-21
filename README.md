@@ -1,11 +1,20 @@
 # WORK IN PROGRESS. STILL UNDER ACTIVE DEVELOPMENT
 
-Ansible CNSSC Role
-===================
+Ansible Cloud Native Secure Supply Chain Role
+=============================================
 
+![CI](https://github.com/redhat-octo-security/ansible-cnssc-pipeline-role/workflows/CI/badge.svg)
 
 Ansible role to deploy an environment for development or demonstration of a
 cloud native secure supply chain.
+
+Planned Projects
+----------------
+
+* [Tekton](https://tekton.dev/)
+* [In-toto](https://in-toto.io/)
+* [Open-Policy-Agent](https://www.openpolicyagent.org/)
+* [Keylime](https://keylime.dev/)
 
 Usage
 -----
