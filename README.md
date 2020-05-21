@@ -1,4 +1,5 @@
-# WORK IN PROGRESS. STILL UNDER ACTIVE DEVELOPMENT
+# WORK IN PROGRESS.
+# STILL UNDER ACTIVE DEVELOPMENT
 
 Ansible Cloud Native Secure Supply Chain Role
 =============================================
@@ -32,7 +33,6 @@ A `Vagrantfile` is available for provisioning.
 Clone the repository and then simply run with the following additional args
 added to the `vagrant` command:
 
-
 * `--repo`: This mounts a local folder into the virtual machine.
 * `--cpus`: The amount of CPU's. If not provided, it defaults to `2`
 * `--memory`: The amount of memory to assign.  If not provided, it defaults to `2048`
@@ -53,7 +53,7 @@ An example using VirtualBox:
 vagrant --repo=/home/jdoe/pipeline --cpus=4 --memory=4096  up --provider virtualbox --provision
 ```
 
-| NOTE: Customized args (`--instances`, `--repos` etc), come before the main vagrant args (such as `up`, `--provider`) |
+| NOTE: Customized args (`--repos` etc), come before the main vagrant args (such as `up`, `--provider`) |
 | --- |
 
 Once the VM is started, `vagrant ssh` into the VM
