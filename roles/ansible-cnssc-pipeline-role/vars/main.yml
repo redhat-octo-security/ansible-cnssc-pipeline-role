@@ -18,3 +18,7 @@ kubectl_hash: 6fcf70aae5bc64870c358fac153cdfdc93f55d8bae010741ecce06bb14c083ea
 
 tkn_version: 0.9.0
 tln_hash: b070f458398deb9f81eff93858b61aa0303e9c38972fadc2b3a03ccb7175a267
+
+# repo data
+in-toto-branch: master
+secure-supply-chain-branch: master

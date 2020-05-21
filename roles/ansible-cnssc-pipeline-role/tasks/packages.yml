@@ -1,14 +1,11 @@
 - name: update/upgrade all packages
   dnf:
       name: "*"
-      state: latest
 
 - name: install moby-engine
   dnf:
       name: moby-engine
-      state: latest
 
 - name: install git
   dnf:
       name: git
-      state: latest
