@@ -7,5 +7,5 @@
         policy: targeted
         state: permissive
   roles:
-    - ansible-cnssc-pipeline-role
+    - ansible-cloud-native-ssc
     - fubarhouse.golang

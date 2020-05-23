@@ -1,6 +1,6 @@
 galaxy_info:
   author: Luke Hinds
-  description: ansible-cnssc-pipeline-role
+  description: ansible-cloud-native-ssc
   company: Red Hat
 
   # If the issue tracker for your role is not on github, uncomment the

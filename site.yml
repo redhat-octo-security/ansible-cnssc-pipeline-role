@@ -2,4 +2,4 @@
 - hosts: all
   sudo: yes
   roles:
-    - { role: "ansible-cnssc-pipeline-role", ansible-cnssc-pipeline-role-env_version: "0.0.1" }
+    - { role: "ansible-cloud-native-ssc", ansible-cloud-native-ssc-env_version: "0.0.1" }

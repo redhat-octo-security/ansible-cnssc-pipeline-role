@@ -1,0 +1,5 @@
+- name: "Clone in-toto"
+  git:
+    repo: https://github.com/in-toto/in-toto
+    #version: "{{ in-toto-branch }}"
+    dest: /root/in-toto

@@ -4,7 +4,7 @@
 Ansible Cloud Native Secure Supply Chain Role
 =============================================
 
-![CI](https://github.com/redhat-octo-security/ansible-cnssc-pipeline-role/workflows/CI/badge.svg)
+![CI](https://github.com/redhat-octo-security/ansible-cloud-native-ssc/workflows/CI/badge.svg)
 
 Ansible role to deploy an environment for development or demonstration of a
 cloud native secure supply chain.
