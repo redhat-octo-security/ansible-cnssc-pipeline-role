@@ -7,5 +7,5 @@
         policy: targeted
         state: permissive
   roles:
+    - gantsign.golang
     - ansible-cloud-native-ssc
-    - fubarhouse.golang

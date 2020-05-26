@@ -36,7 +36,7 @@ Vagrant.configure("2") do |config|
        # your provider (VirtualBox / Libvirt etc)
        # cnssc.vm.network :private_network, ip: "10.0.0.#{i}1"
        # cnssc.vm.network "forwarded_port", guest: 443, host: "844#{i}"
-       cnssc.vm.hostname = "tekton-dev"
+       cnssc.vm.hostname = "cnssc"
        if defined? (repo)
          cnssc.vm.synced_folder "#{repo}", "/home/vagrant/cnssc-dev", type: "sshfs"
        end

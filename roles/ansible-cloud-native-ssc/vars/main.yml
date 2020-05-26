@@ -1,14 +1,8 @@
 ---
 # GOLANG vars
-go_version: 1.14
-GOPATH: /home/vagrant/go
-GO111MODULE: "on"
-golang_shell_profile: /root/.bash_profile
-golang_shell_profile: /home/vagrant/.bash_profile
 
-go_get:
-- name: golint
-  url: github.com/google/ko
+golang_version: '1.14.3'
+golang_gopath: 'home/vagrant/go'
 
 # Download data
 kind_version: v0.8.1
@@ -23,3 +17,7 @@ tkn_hash: b070f458398deb9f81eff93858b61aa0303e9c38972fadc2b3a03ccb7175a267
 # repo data
 in-toto-branch: master
 secure-supply-chain-branch: master
+
+# user account
+cnssc_effective_user_id: vagrant
+cnssc_effective_group_id: vagrant
