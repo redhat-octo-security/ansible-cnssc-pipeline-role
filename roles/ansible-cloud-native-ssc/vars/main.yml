@@ -1,8 +1,16 @@
 ---
 # GOLANG vars
 
-golang_version: '1.14.3'
-golang_gopath: '$HOME/go'
+go_version: 1.14.3
+GOPATH: /root/go
+GO111MODULE: "on"
+golang_shell_profile: /root/.bash_profile
+
+# Download ko
+go_get:
+- name: ko
+  url: github.com/google/ko/cmd/ko
+  modules: false
 
 # Download data
 kind_version: v0.8.1
@@ -19,8 +27,8 @@ in-toto-branch: master
 secure-supply-chain-branch: master
 
 # user account
-cnssc_effective_user_id: vagrant
-cnssc_effective_group_id: vagrant
+cnssc_effective_user_id: root
+cnssc_effective_group_id: root
 
 # github account
 github_user_id: lukehinds

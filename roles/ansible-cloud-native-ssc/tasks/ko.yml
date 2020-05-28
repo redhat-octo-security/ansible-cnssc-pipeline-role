@@ -1,3 +1,4 @@
-- name: Install ko
-  environment: GO111MODULE=on
-  command: go get github.com/google/ko/cmd/ko
+go_get:
+- name: ko
+  url: github.com/google/ko/cmd/ko
+  modules: true

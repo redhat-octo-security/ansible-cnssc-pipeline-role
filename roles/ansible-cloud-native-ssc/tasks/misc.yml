@@ -1,6 +1,6 @@
 - name: Create a directory if it does not exist
   file:
-    path: /home/vagrant/go/src/github.com
+    path: /root/vagrant/go/src/github.com
     state: directory
     owner: "{{ cnssc_effective_user_id }}"
     group: "{{ cnssc_effective_group_id }}"
@@ -18,4 +18,5 @@
 - name: Copy registry script to host
   copy:
     src: kind-with-registry.sh
-    dest: '/home/vagrant/kind-with-registry.sh'
+    dest: '/root/kind-with-registry.sh'
+    mode: '0755'

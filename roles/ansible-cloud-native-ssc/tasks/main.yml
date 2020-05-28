@@ -5,5 +5,4 @@
 - include: kubectl.yml
 - include: tkn.yml
 - include: misc.yml
-- include: ko.yml
-- include: clonerepos.yml
+# - include: clonerepos.yml
