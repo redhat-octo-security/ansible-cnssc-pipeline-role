@@ -1,5 +1,21 @@
-- name: Change go home folder permissions
+- name: Create a directory if it does not exist
   file:
-    path: /home/vagrant/go
+    path: /home/vagrant/go/src/github.com
+    state: directory
     owner: "{{ cnssc_effective_user_id }}"
     group: "{{ cnssc_effective_group_id }}"
+    mode: '0755'
+
+- name: adding existing user '{{ cnssc_effective_user_id }}' to group sudo
+  user:
+    name: '{{ cnssc_effective_user_id }}'
+    groups: docker
+    append: yes
+
+- name: Run cgroups script
+  script: change-cgroups.sh
+
+- name: Copy registry script to host
+  copy:
+    src: kind-with-registry.sh
+    dest: '/home/vagrant/kind-with-registry.sh'

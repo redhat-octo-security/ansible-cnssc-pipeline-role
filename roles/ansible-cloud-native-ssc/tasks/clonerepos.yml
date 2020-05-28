@@ -1,5 +1,5 @@
-- name: "Clone in-toto"
-  git:
-    repo: https://github.com/in-toto/in-toto
-    #version: "{{ in-toto-branch }}"
-    dest: /root/in-toto
+# - name: "Clone tektoncd { github_user_id }fork"
+#   git:
+#     repo: "https://github.com/{{ github_user_id }}/pipeline"
+#     #version: "{{ in-toto-branch }}"
+#     dest: /home/vagrant/go/src/github.com/tektoncd

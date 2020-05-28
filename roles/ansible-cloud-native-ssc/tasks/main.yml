@@ -4,4 +4,6 @@
 - include: kind.yml
 - include: kubectl.yml
 - include: tkn.yml
+- include: misc.yml
+- include: ko.yml
 - include: clonerepos.yml

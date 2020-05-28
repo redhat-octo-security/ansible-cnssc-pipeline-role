@@ -30,6 +30,10 @@ Vagrant
 
 A `Vagrantfile` is available for provisioning.
 
+This requires `vagrant-reload`:
+
+`vagrant plugin install vagrant-reload`
+
 Clone the repository and then simply run with the following additional args
 added to the `vagrant` command:
 
