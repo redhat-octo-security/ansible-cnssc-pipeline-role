@@ -20,3 +20,11 @@
     src: kind-with-registry.sh
     dest: '/root/kind-with-registry.sh'
     mode: '0755'
+
+- name: populate /etc/environment
+  lineinfile:
+    dest: "/etc/environment"
+    state: present
+    regexp: "^{{ item.key }}="
+    line: "{{ item.key }}={{ item.value}}"
+  with_items: "{{ os_environment }}"

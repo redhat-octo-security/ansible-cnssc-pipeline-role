@@ -1,4 +1,0 @@
-go_get:
-- name: ko
-  url: github.com/google/ko/cmd/ko
-  modules: true

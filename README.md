@@ -1,5 +1,4 @@
 # WORK IN PROGRESS.
-# STILL UNDER ACTIVE DEVELOPMENT
 
 Ansible Cloud Native Secure Supply Chain Role
 =============================================
@@ -9,13 +8,22 @@ Ansible Cloud Native Secure Supply Chain Role
 Ansible role to deploy an environment for development or demonstration of a
 cloud native secure supply chain.
 
+This role will set a complete golang environment for the root user. We use root
+as this role has no business being used in a production environment at present
+so a security context is not a concern.
+
+All golang variables and other tools to go get can be found in:
+
+`roles/ansible-cloud-native-ssc/vars/main.yml`
+
 Planned Projects
 ----------------
 
-* [Tekton](https://tekton.dev/)
-* [In-toto](https://in-toto.io/)
-* [Open-Policy-Agent](https://www.openpolicyagent.org/)
-* [Keylime](https://keylime.dev/)
+* - [x] [Tekton](https://tekton.dev/)
+* - [x] [In-toto](https://in-toto.io/) (golang version)
+* - [ ] [Open-Policy-Agent](https://www.openpolicyagent.org/)
+* - [ ] [Keylime](https://keylime.dev/)
+* - [ ] [Trillian](https://github.com/google/trillian)
 
 Usage
 -----
@@ -42,7 +50,8 @@ added to the `vagrant` command:
 * `--memory`: The amount of memory to assign.  If not provided, it defaults to `2048`
 
 
-Note `--repo` could be a folder which contains local repositories you wish to test or build against within the VM.
+Note `--repo` could be a folder which contains local repositories you wish to
+test or build against within the VM. This will be found in `/root/my_repos`.
 
 
 An example using libvirt:
@@ -60,4 +69,4 @@ vagrant --repo=/home/jdoe/pipeline --cpus=4 --memory=4096  up --provider virtual
 | NOTE: Customized args (`--repos` etc), come before the main vagrant args (such as `up`, `--provider`) |
 | --- |
 
-Once the VM is started, `vagrant ssh` into the VM
+Once the VM is started, `vagrant ssh` into the VM and `sudo -i` to root
