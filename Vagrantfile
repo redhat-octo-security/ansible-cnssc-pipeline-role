@@ -38,7 +38,7 @@ Vagrant.configure("2") do |config|
        # cnssc.vm.network "forwarded_port", guest: 443, host: "844#{i}"
        cnssc.vm.hostname = "cnssc"
        if defined? (repo)
-         cnssc.vm.synced_folder "#{repo}", "/home/vagrant/cnssc-dev", type: "sshfs"
+         cnssc.vm.synced_folder "#{repo}", "/root/my_repos", type: "sshfs"
        end
        cnssc.vm.provider "virtualbox" do |v|
         v.memory = "#{memory}"
@@ -53,5 +53,6 @@ Vagrant.configure("2") do |config|
            ansible.playbook = "playbook.yml"
            ansible.galaxy_role_file = "requirements.yml"
        end
+       cnssc.vm.provision :reload
     end
 end

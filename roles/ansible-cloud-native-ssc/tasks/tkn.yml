@@ -6,7 +6,7 @@
     mode: '0755'
     checksum: "sha256:{{ tkn_hash }}"
 
-- name: Unarchive a file that is already on the remote machine
+- name: Unarchive tkn to /usr/local/bin
   unarchive:
     src: "/usr/local/bin/tkn_{{ tkn_version }}_Linux_x86_64.tar.gz"
     dest: /usr/local/bin/

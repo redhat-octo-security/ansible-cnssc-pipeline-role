@@ -1,10 +1,29 @@
 ---
 # GOLANG vars
 
-golang_version: '1.14.3'
-golang_gopath: 'home/vagrant/go'
+go_version: 1.14.3
+GOPATH: /root/go
+GO111MODULE: "on"
+golang_shell_profile: /root/.bash_profile
 
-# Download data
+# Download ko
+go_get:
+- name: ko
+  url: github.com/google/ko/cmd/ko
+  modules: false
+
+# Download in-toto-golang
+go_get:
+- name: in-toto-golang
+  url: github.com/in-toto/in-toto-golang
+  modules: true
+
+# Enviroment variables
+os_environment:
+  - key: KO_DOCKER_REPO
+    value : localhost:5000/mypipeline
+
+# Download hashes
 kind_version: v0.8.1
 kind_hash: 781c3db479b805d161b7c2c7a31896d1a504b583ebfcce8fcd49538c684d96bc
 
@@ -19,5 +38,8 @@ in-toto-branch: master
 secure-supply-chain-branch: master
 
 # user account
-cnssc_effective_user_id: vagrant
-cnssc_effective_group_id: vagrant
+cnssc_effective_user_id: root
+cnssc_effective_group_id: root
+
+# github account
+github_user_id: someuser

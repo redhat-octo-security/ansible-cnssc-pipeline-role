@@ -10,3 +10,11 @@
 - name: install git
   dnf:
     name: git
+
+- name: install grubby
+  dnf:
+    name: grubby
+
+- name: install jq
+  dnf:
+    name: jq
