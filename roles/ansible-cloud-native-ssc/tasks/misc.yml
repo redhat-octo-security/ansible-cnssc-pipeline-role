@@ -21,6 +21,12 @@
     dest: '/root/kind-with-registry.sh'
     mode: '0755'
 
+- name: Copy hello-world-pipeline to host
+  copy:
+    src: hello-world-pipeline.yml
+    dest: '/root/hello-world-pipeline.yml'
+    mode: '0755'
+
 - name: populate /etc/environment
   lineinfile:
     dest: "/etc/environment"
