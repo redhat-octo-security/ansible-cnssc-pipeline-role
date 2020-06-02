@@ -6,17 +6,14 @@ GOPATH: /root/go
 GO111MODULE: "on"
 golang_shell_profile: /root/.bash_profile
 
-# Download ko
+# Go get
 go_get:
-- name: ko
-  url: github.com/google/ko/cmd/ko
-  modules: false
-
-# Download in-toto-golang
-go_get:
-- name: in-toto-golang
-  url: github.com/in-toto/in-toto-golang
-  modules: true
+  - name: ko
+    url: github.com/google/ko/cmd/ko
+    modules: false
+  - name: in-toto-golang
+    url: github.com/in-toto/in-toto-golang
+    modules: true
 
 # Enviroment variables
 os_environment:
