@@ -42,6 +42,10 @@ This requires `vagrant-reload`:
 
 `vagrant plugin install vagrant-reload`
 
+This requires `vagrant-sshfs`:
+
+`vagrant plugin install vagrant-sshfs`
+
 Clone the repository and then simply run with the following additional args
 added to the `vagrant` command:
 

@@ -1,6 +1,6 @@
 - name: Create a directory if it does not exist
   file:
-    path: /root/go/src/github.com
+    path: /root/go/src/github.com/tekton
     state: directory
     owner: "{{ cnssc_effective_user_id }}"
     group: "{{ cnssc_effective_group_id }}"
@@ -19,6 +19,12 @@
   copy:
     src: kind-with-registry.sh
     dest: '/root/kind-with-registry.sh'
+    mode: '0755'
+
+- name: Copy hello-world-pipeline to host
+  copy:
+    src: hello-world-pipeline.yml
+    dest: '/root/hello-world-pipeline.yml'
     mode: '0755'
 
 - name: populate /etc/environment
