@@ -14,6 +14,9 @@ go_get:
   - name: in-toto-golang
     url: github.com/in-toto/in-toto-golang
     modules: true
+  - name: trillian
+    url: github.com/google/trillian
+    modules: true
 
 # Enviroment variables
 os_environment:
